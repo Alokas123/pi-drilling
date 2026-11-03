@@ -1,9 +1,11 @@
-fx_version 'adamant'
-games { 'gta5' }
+fx_version 'cerulean'
+game 'gta5'
+lua54 'yes'
 
-client_scripts {
-  'drilling.lua',
-}
-dependencies {
-  'meta_libs'
-}
+name 'pi-drilling'
+author 'Pingu'
+version '1.0.0'
+
+shared_script '@ox_lib/init.lua'
+client_script 'client.lua'
+dependency 'ox_lib'
